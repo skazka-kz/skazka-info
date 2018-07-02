@@ -11,7 +11,7 @@ class LandingPage extends React.Component {
         <HeaderLogo src={logo} />
       </Header>
       <HeaderLinksContainer>
-        <HeaderLink>О Компании</HeaderLink>
+        <HeaderLink>О Нас</HeaderLink>
         <HeaderLink>Поставщики</HeaderLink>
         <HeaderLink>Работать с нами</HeaderLink>
         <HeaderLink>Где мы</HeaderLink>

@@ -17,18 +17,24 @@ export const Header = styled.header`
 
 export const HeaderLogo = styled.img`
   padding: 1rem;
-  max-width: 80%;
+  max-width: 40%;
+
+  @media (min-width: 768px) {
+    max-width: 80%;
+  }
 `;
 
 export const HeaderLinksContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
 
   a {
     font-size: 0.9rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     padding: 0 0.5rem;
-    border-right: 2px solid ${secondaryColor};
+
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -38,9 +44,12 @@ export const HeaderLinksContainer = styled.div`
   }
 
   @media (min-width: 768px) {
+    flex-direction: row;
     a {
+      margin: 1rem 0;
       font-size: 1.3rem;
       padding: 0 2rem;
+      border-right: 2px solid ${secondaryColor};
     }
   }
 `;
