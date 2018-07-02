@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import SampleComponent from "./components/SampleComponent";
+import LandingPage from "./components/LandingPage";
 
 const AppWrapper = styled.div``;
 
@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <AppWrapper>
-        <SampleComponent />
+        <LandingPage />
       </AppWrapper>
     );
   }
